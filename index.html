@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>nikko296</title>
+<META NAME="Description" CONTENT="nikko296">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+</head>
+<body>
+<iframe id="frame"  frameborder="0" src="http://nikko296.wordpress.com" style=" width:100%;"></iframe>
+<script type="text/javascript">
+function resizeIframe() {
+    var height = document.documentElement.clientHeight;
+    height -= document.getElementById('frame').offsetTop;
+    // not sure how to get this dynamically
+    height -= 0; /* whatever you set your body bottom margin/padding to be */
+    document.getElementById('frame').style.height = height +"px";
+};
+document.getElementById('frame').onload = resizeIframe;
+window.onresize = resizeIframe;
+</script>
+</body>
+</html>
